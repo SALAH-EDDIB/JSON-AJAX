@@ -1,15 +1,34 @@
-let xreq = new XMLHttpRequest();
+var btn = document.querySelector('#bttn')
 
-xreq.open('GET', 'js/cars.json');
+var info = document.querySelector('#info')
 
-xreq.onload = function () {
+btn.addEventListener('click', function () {
+    let xreq = new XMLHttpRequest();
 
-    let xData = JSON.parse(xreq.responseText);
-    document.write(xData[0].name);
-    document.write(xData[0].model);
-    document.write(xData[1].name);
-    document.write(xData[1].model);
+    xreq.open('GET', 'js/cars.json');
 
-};
+    xreq.onload = function () {
 
-xreq.send();
+        let xData = JSON.parse(xreq.responseText);
+
+
+        addHtml(xData)
+
+    };
+
+    xreq.send();
+
+})
+
+function addHtml(data) {
+
+    let htmlText = '';
+
+    for (i = 0; i < data.length; i++) {
+
+        htmlText += "<p>" + data[i].name + "it's a" + data[i].model + " <hr></p>"
+    }
+
+    info.insertAdjacentHTML('beforeend', htmlText)
+
+}

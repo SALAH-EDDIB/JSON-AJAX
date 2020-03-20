@@ -1,9 +1,5 @@
-.container {
-  text-align: center; }
-
 header {
   margin-top: 50px;
-  display: flex;
-  text-align: center; }
+  display: flex; }
   header button {
     margin-left: 20px; }
