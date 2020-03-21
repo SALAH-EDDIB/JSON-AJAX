@@ -1,0 +1,26 @@
+[
+
+    {
+        "name": "hardi ",
+        "model": " Hyundai",
+        "type": {
+            "four": ["D56", "Cross"],
+            "salon": ["Aclodr", "Caviar"]
+        },
+        "year": "2017"
+
+    },
+
+    {
+        "name": "chevy ",
+        "model": "chevrolet",
+
+        "type": {
+            "four": ["HJ4", "DR3"],
+            "salon": ["PML", "KILOR"]
+        },
+        "year": "2016"
+
+    }
+
+]

@@ -1,0 +1,26 @@
+[
+
+    {
+        "name": "safari ",
+        "model": " honda ",
+        "type": {
+            "four": ["CRV", "Crosstour"],
+            "salon": ["Accord", "Civir"]
+        },
+        "year": "2014"
+
+    },
+
+    {
+        "name": "class A ",
+        "model": " Mercedes",
+
+        "type": {
+            "four": ["G55", "G63"],
+            "salon": ["AMG", "SLR"]
+        },
+        "year": "2013"
+
+    }
+
+]
